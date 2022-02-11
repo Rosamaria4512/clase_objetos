@@ -12,14 +12,24 @@ print_r('</pre>');
 echo "<br>";
 echo $objAuto->getMarca();
 echo "<br>";
-echo "La marca de su Auto es" .   $objAuto->setMarca  (" CLIO");
+echo "La marca de su Auto es"  .   $objAuto ->setMarca  (" CLIO");
 echo $objAuto->getMarca();
 
+
 echo "<br>";
-echo "El modelo de su Auto es" .  $objAuto-> modelo;
+echo "La placa de su Auto es" .   $objAuto ->setPlaca  (" SER456 ");
+echo $objAuto->getPlaca();
+
+echo "<br>";
+echo "El modelo de su Auto es " .  $objAuto  -> modelo;
 echo "<br>";
 
-echo 'la distancia recorrida es: ' . $objAuto->getDistancia();
+echo 'la distancia recorrida es: ' . $objAuto ->getDistancia();
 
+echo "<br>";
+$objAuto->setPlaca("GTY-256");
+echo "placa actualizada del auto es: " . $objAuto->getPlaca();
+echo "<br>";
+ 
 
 ?>

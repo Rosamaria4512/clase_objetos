@@ -4,7 +4,7 @@ echo "<b>AUTO </b>"."<p>";
 
 class   Auto {
     private $marca;
-    public $placa;
+    protected $placa;
     public $modelo;
     public $kilometraje;
     public $velocidad;
@@ -50,11 +50,15 @@ class   Auto {
     public function setMarca($marca){
         $this->marca = $marca;
     }
-
-
-
+    public function getPlaca(){
+        return $this->placa;
+    }
+    public function setPlaca($placa){
+        $this->placa = $placa;
+    }
 }
-   
+
+
     
 
 
