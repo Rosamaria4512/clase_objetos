@@ -11,7 +11,7 @@ class cliente{
     private $fecha_registro;
     private $clave_acceso;
 
-    function __construct(string $vrnombre,string $vrid, string $vremail, string $vredad, string $vrestado)
+    function __construct(string $vrnombre,int $vrid, string $vremail, string $vredad, string $vrestado)
     {
 
         $this->Nombre=$vrnombre;

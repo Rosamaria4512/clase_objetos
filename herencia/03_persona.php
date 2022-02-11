@@ -2,13 +2,14 @@
 
 echo "<b>persona 1</b>"."<p>";
 
-class persona{
+class Persona{
     public $Nombre;
-    public $edad;
+    protected $edad;
     private $id;
 
+//metodo constructor INT es paara numero entero, STRING recibir cadena de caracteres,FLOAT para decimales
 
-    function __construct(string $vrnombre,string $vredad, string $vrid)
+    function __construct(string $vrnombre,string $vredad, $vrid)
     {
 
         $this->Nombre=$vrnombre;
@@ -23,7 +24,19 @@ class persona{
          );
          return $arraypersona;
      }
-     
+     public function getid(){
+        return $this->id;
+      }
+  
+      public function setid($id){
+          $this->id = $id;
+      }
+      public function getedad(){
+          return $this->edad;
+      }
+      public function setedad($edad){
+          $this->edad=$edad;
+      }
     
         # code...
     
