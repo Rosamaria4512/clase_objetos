@@ -12,6 +12,7 @@ class Cliente extends Persona {
         $this->credito=$vrcredito;
     }
  public function getcredito(){
+    return $this->credito;
 
  }
 }
