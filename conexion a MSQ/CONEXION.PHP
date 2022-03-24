@@ -1,6 +1,6 @@
 <?php
 
-class conexion {
+class Conexion {
      protected $db;
      private $driver   ="mysql";
      protected $host   ="localhost";
@@ -29,5 +29,5 @@ class conexion {
 
 $objConexion = new Conexion();
 print_r($objConexion);
-
+ 
 ?>
